@@ -6,8 +6,7 @@ A consulting-grade full-stack analytics application tracking valuation anomalies
 
 [![Status](https://img.shields.io/badge/Status-Portfolio_Ready-success)]()
 [![Stack](https://img.shields.io/badge/Stack-React_|_Python_Flask-blue)]()
-[![Demo](https://img.shields.io/badge/Demo-Live_on_Vercel-black)](https://finnish-green-energy.vercel.app)
-<!-- 👆 Replace the link above after you deploy to Vercel -->
+[![Demo](https://img.shields.io/badge/Demo-Live_on_Vercel-black)](https://finnish-green-energy-monitor-rz6i-o62u6bf34.vercel.app/)
 
 ## 🚀 Project Overview
 
