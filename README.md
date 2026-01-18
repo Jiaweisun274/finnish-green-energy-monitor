@@ -1,6 +1,6 @@
 # 🇫🇮 Finnish Green Energy & Clean Tech Market Monitor
 
-A full-stack analytics application tracking valuation anomalies and growth drivers in Finland's key renewable energy companies.
+A consulting-grade full-stack analytics application tracking valuation anomalies and growth drivers in Finland's key renewable energy companies.
 
 ![Dashboard Preview](docs/screenshots/overview.png)
 
@@ -30,7 +30,18 @@ The backend relies on a **Python Flask** server that orchestrates a robust ETL p
 
 ### Directory Structure
 
-The codebase is organized into two primary domains: `dashboard` contains the React frontend logic and visualization components, while `pipeline` houses the Python ETL scripts and Flask API server. Documentation and screenshots are maintained in the `docs` directory.
+```text
+/pipeline        # Python Backend (ETL + Flask API)
+  ├── data_pipeline.py  # Core data extraction & calculation logic
+  ├── api.py            # Local server for frontend interaction
+  └── requirements.txt  # Python dependencies
+/dashboard       # React Frontend
+  ├── src/              # UI Components & Logic
+  └── public/           # Stores generated JSON data
+/docs            # Consulting Deliverables
+  ├── executive_summary.md
+  └── data_dictionary.md
+```
 
 ## How to Run Locally
 
@@ -44,3 +55,23 @@ This application is designed to be flexible. It can run in **Snapshot Mode** (Fr
 Navigate to the dashboard directory and install dependencies. This will launch the application in Snapshot Mode by default.
 
 ```bash
+cd dashboard
+npm install
+npm run dev
+```
+
+### 2. Enable Live Data (Optional Backend)
+To enable the "Run Pipeline" feature, open a separate terminal to start the Python API server. This allows the dashboard to fetch fresh data from Yahoo Finance.
+
+```bash
+cd pipeline
+pip install -r requirements.txt
+python api.py
+```
+
+## Methodology
+
+Financial metrics are calculated with strict adherence to consulting standards. Valuation multiples rely on TTM (Trailing Twelve Months) financials, and companies with negative earnings are explicitly classified as "Loss-making / NM" to preserve the integrity of sector averages. Growth metrics, such as the 3-Year CAGR, are derived from adjusted close prices to account for dividend reinvestment.
+
+## License
+MIT License. Created for portfolio demonstration purposes.
