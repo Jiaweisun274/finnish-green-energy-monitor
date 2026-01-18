@@ -1,6 +1,6 @@
 # 🇫🇮 Finnish Green Energy & Clean Tech Market Monitor
 
-A consulting-grade full-stack analytics application tracking valuation anomalies and growth drivers in Finland's key renewable energy companies.
+A full-stack analytics application tracking valuation anomalies and growth drivers in Finland's key renewable energy companies.
 
 ![Dashboard Preview](docs/screenshots/overview.png)
 
@@ -44,6 +44,3 @@ This application is designed to be flexible. It can run in **Snapshot Mode** (Fr
 Navigate to the dashboard directory and install dependencies. This will launch the application in Snapshot Mode by default.
 
 ```bash
-cd dashboard
-npm install
-npm run dev
