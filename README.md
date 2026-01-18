@@ -2,7 +2,7 @@
 
 A consulting-grade full-stack analytics application tracking valuation anomalies and growth drivers in Finland's key renewable energy companies.
 
-![Dashboard Preview](docs/screenshots/overview_dashboard.png)
+![Dashboard Preview](docs/screenshots/overview.png)
 
 [![Status](https://img.shields.io/badge/Status-Portfolio_Ready-success)]()
 [![Stack](https://img.shields.io/badge/Stack-React_|_Python_Flask-blue)]()
