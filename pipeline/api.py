@@ -14,7 +14,6 @@ def refresh_data():
     try:
         logger.info("Received refresh request...")
         
-        # Now returns a tuple (fundamentals, history)
         fundamentals, history = data_pipeline.run_pipeline()
         
         if fundamentals:
